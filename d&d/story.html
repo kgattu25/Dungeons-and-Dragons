@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Dungeons and Dragons</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            color: white;
+            background-image: url('entrance.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        #story{
+            max-width: 800px;
+            line-height: 1.5;
+            margin: 250px auto;
+            padding: 20px;
+            background-color: #000000c6;
+            border-radius: 10px;
+            text-align: center;
+        }
+        button{
+            margin: 10px;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #092635;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: #1B4242;
+        }
+        p{
+            font-size: 19px;
+            font-weight: 500;
+            text-align:left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="story">
+        <p id="scene">You stand before the imposing entrance to the Dragon's Lair, a massive cavern shrouded in darkness. The air is thick with the scent of danger, and the sound of distant growls echoes through the stone corridors.</p>
+        <div id="options">
+            <button onclick="enterD()">Enter the Dungeon</button>
+            <button onclick="dontEnterD()">Turn Back and Abandon Your Quest</button>
+        </div>
+    </div>
+</body>
+</html>
